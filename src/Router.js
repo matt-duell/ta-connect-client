@@ -9,6 +9,7 @@ import Login from './components/Login'
 import Logout from './components/Logout'
 import About from './components/About'
 import PositionSearch from './components/positions/PositionSearchPage';
+import ProfilePage from './components/profile/ProfilePage';
 
 function requireAuth(nextState, replace) {
   if (!auth.loggedIn()) {
@@ -27,6 +28,7 @@ export default (
       <Route path="about" component={About} />
       <Route path="dashboard" component={Dashboard} onEnter={requireAuth} />
       <Route path="positions" component={PositionSearch} />
+      <Route path="profile" component={ProfilePage} />
     </Route>
   </Router>
 );

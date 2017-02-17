@@ -39,6 +39,11 @@ class PositionSearchPage extends Component{
   }
 
 
+  // addPositionToCart(position){
+
+    
+  // }
+
   applyForPosition(position){
 
     console.log('PositionSearchPage applyForPosition');

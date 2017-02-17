@@ -36,6 +36,7 @@ class App extends React.Component {
           <li><Link to="/about">About</Link></li>
           <li><Link to="/dashboard">Dashboard</Link> (authenticated)</li>
           <li><Link to="/positions">Open Positions</Link></li>
+          <li><Link to="/profile">Profile</Link></li>
         </ul>
         {this.props.children || <p>You are {!this.state.loggedIn && 'not'} logged in.</p>}
       </div>
